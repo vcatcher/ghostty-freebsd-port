@@ -7,7 +7,6 @@ task:
 
   setup_script:
     - pkg install -y gtk4 pkgconf libadwaita curl
-    - mkdir $HOME/bin
     - curl -sSL https://ziglang.org/download/0.13.0/zig-freebsd-x86_64-0.13.0.tar.xz --output $HOME/bin/zig.txz
     - cd $HOME/bin && tar xaf zig.txz
     - ln -s $HOME/bin/zig-freebsd-x86_64-0.13.0/zig $HOME/bin/zig
